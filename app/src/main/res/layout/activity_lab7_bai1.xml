@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lab7_bai1">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/all" />
+
+    <Button
+        android:id="@+id/btnzom"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Zom"
+        android:onClick="scaleImage"
+        android:layout_centerInParent="true"
+        />
+    <Button
+        android:id="@+id/btnTranslate"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Translate"
+        android:onClick="translateImage"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/btnzom"
+        />
+    <Button
+        android:id="@+id/btnRotate"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Rotate"
+        android:onClick="rotateImage"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/btnTranslate"
+       />
+</RelativeLayout>
